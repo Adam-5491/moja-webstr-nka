@@ -3,33 +3,193 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#f5f7f8">
+  <meta name="description" content="Oddýchnite si v útulnej chate v Terchovej, na skok od Malej Fatry. Pozrite si vybavenie, cenník a pošlite nám dopyt na pobyt.">
+  <title>Chata pod Rozsutcom — oddych v Terchovej</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
-
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#domov" aria-label="Chata pod Rozsutcom — domov">
+        <span class="brand__mark" aria-hidden="true">⌂</span>
+        <span class="brand__name">Chata <strong>pod Rozsutcom</strong><small>TERCHOVÁ · MALÁ FATRA</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Otvoriť navigáciu</span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+      <nav class="main-nav" id="primary-nav" aria-label="Hlavná navigácia">
+        <a href="#domov">Domov</a>
+        <a href="#vybavenie">Vybavenie</a>
+        <a href="#cennik">Cenník</a>
+        <a href="#o-chate">O chate</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="button button--small button--purple nav-booking" href="#rezervacia">Rezervovať <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
+  </header>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+  <main id="obsah">
+    <section class="hero" id="domov" aria-labelledby="hero-title">
+      <div class="hero__scene" aria-hidden="true">
+        <span class="sun"></span>
+        <span class="mountain mountain--back"></span>
+        <span class="mountain mountain--middle"></span>
+        <span class="mountain mountain--front"></span>
+        <span class="pine pine--one"></span>
+        <span class="pine pine--two"></span>
+        <span class="pine pine--three"></span>
+        <span class="cabin-illustration"><i></i></span>
+      </div>
+      <div class="container hero__content">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Vaše miesto v Malej Fatre</p>
+        <h1 id="hero-title">Spomaľte.<br><span>Nadýchnite sa hôr.</span></h1>
+        <p class="hero__intro">Útulná chata v srdci Terchovej. Turistické chodníky za dverami, pokoj a pohodlie po návrate.</p>
+        <div class="hero__actions">
+          <a class="button button--green" href="#rezervacia">Naplánovať pobyt <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#o-chate">Spoznajte našu chatu <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero__note"><span class="hero__note-icon" aria-hidden="true">⌖</span> Terchová, Vrátna dolina</div>
+      </div>
+      <div class="hero__caption" aria-hidden="true">MALÁ FATRA · 49°15′ S 19°02′ V</div>
+    </section>
+
+    <section class="quick-facts" aria-label="Informácie o chate">
+      <div class="container quick-facts__inner">
+        <div class="fact"><span class="fact__icon" aria-hidden="true">♧</span><span><strong>4 – 6 hostí</strong><small>Priestor pre celú rodinu</small></span></div>
+        <div class="fact"><span class="fact__icon" aria-hidden="true">⌂</span><span><strong>Celá chata</strong><small>Súkromie len pre vás</small></span></div>
+        <div class="fact"><span class="fact__icon" aria-hidden="true">⌖</span><span><strong>Terchová</strong><small>Malá Fatra na dosah</small></span></div>
+        <div class="fact"><span class="fact__icon" aria-hidden="true">♡</span><span><strong>Pokoj a príroda</strong><small>Oddych v každom ročnom období</small></span></div>
+      </div>
+    </section>
+
+    <section class="section section--space" id="vybavenie" aria-labelledby="vybavenie-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Mysleli sme na pohodlie</p>
+          <h2 id="vybavenie-title">Všetko, čo potrebujete.<br><span>Nič, čo vás ruší.</span></h2>
+          <p>Príďte si oddýchnuť. O útulné zázemie a malé radosti počas pobytu je postarané.</p>
+        </div>
+        <div class="amenities">
+          <article class="amenity-card reveal"><span class="amenity-card__icon" aria-hidden="true">⌂</span><h3>Útulné izby</h3><p>Pohodlné lôžka a mäkké rána bez budíka.</p></article>
+          <article class="amenity-card reveal"><span class="amenity-card__icon" aria-hidden="true">♨</span><h3>Teplo domova</h3><p>Spoločné večery pri krbe po dni na horách.</p></article>
+          <article class="amenity-card reveal"><span class="amenity-card__icon" aria-hidden="true">✧</span><h3>Vybavená kuchyňa</h3><p>Uvarte si poctivé raňajky aj večeru po túre.</p></article>
+          <article class="amenity-card reveal"><span class="amenity-card__icon" aria-hidden="true">☼</span><h3>Miesto na oddych</h3><p>Vychutnajte si chvíľu pokoja a čerstvý vzduch.</p></article>
+        </div>
+        <p class="small-note">Uvedené vybavenie a kapacita sú ukážkové údaje — pred zverejnením ich upravte podľa skutočnosti.</p>
+      </div>
+    </section>
+
+    <section class="about-band" id="o-chate" aria-labelledby="about-title">
+      <div class="container about-band__inner">
+        <div class="about-art reveal" aria-hidden="true">
+          <div class="about-art__sun"></div>
+          <div class="about-art__ridge about-art__ridge--back"></div>
+          <div class="about-art__ridge about-art__ridge--front"></div>
+          <div class="about-art__label">TAM, KDE SA<br>HORY STRETÁVAJÚ<br>S POKOJOM.</div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">Malý únik, veľký oddych</p>
+          <h2 id="about-title">Chata s blízkosťou<br><span>k tomu podstatnému.</span></h2>
+          <p>Terchová má svoje tempo. Ráno vás zobudí horský vzduch, cez deň čakajú chodníky Malej Fatry a večer sa nikam neponáhľate. Naša chata je jednoduchým miestom, kde môžete byť spolu a cítiť sa ako doma.</p>
+          <a class="text-link text-link--green" href="#kontakt">Zistite viac o pobyte <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading section-heading--row reveal">
+          <div><p class="eyebrow">Zážitky na dosah</p><h2 id="projects-title">Projekty a plány<br><span>na každý deň.</span></h2></div>
+          <p>Tri malé inšpirácie, ako si užiť pobyt v Terchovej. Každý deň môže vyzerať inak.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-card--walk reveal">
+            <div class="project-card__visual" aria-hidden="true"><span class="visual-sun"></span><span class="visual-peak"></span><span class="visual-trail"></span></div>
+            <div class="project-card__body"><span class="project-card__tag">01 · Na chodníku</span><h3>Objavte Malú Fatru</h3><p>Vyberte sa na túru za výhľadmi, ktoré zostanú v pamäti.</p></div>
+          </article>
+          <article class="project-card project-card--family reveal">
+            <div class="project-card__visual" aria-hidden="true"><span class="visual-sun"></span><span class="visual-peak"></span><span class="visual-trail"></span></div>
+            <div class="project-card__body"><span class="project-card__tag">02 · Spolu</span><h3>Deň v Terchovej</h3><p>Spoznajte dedinku, jej tradície aj chute regiónu.</p></div>
+          </article>
+          <article class="project-card project-card--rest reveal">
+            <div class="project-card__visual" aria-hidden="true"><span class="visual-sun"></span><span class="visual-peak"></span><span class="visual-trail"></span></div>
+            <div class="project-card__body"><span class="project-card__tag">03 · Bez plánov</span><h3>Len tak byť</h3><p>Spomaľte s knihou, čajom a výhľadom na hory.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="cennik" aria-labelledby="pricing-title">
+      <div class="container pricing-section__inner">
+        <div class="pricing-copy reveal">
+          <p class="eyebrow">Pobyt podľa vašich predstáv</p>
+          <h2 id="pricing-title">Jednoduchý cenník.<br><span>Žiadne prekvapenia.</span></h2>
+          <p>Cena závisí od termínu a počtu hostí. Pošlite nám dopyt a pripravíme vám ponuku na mieru.</p>
+          <ul class="pricing-includes">
+            <li><span aria-hidden="true">✓</span> Celá chata len pre vás</li>
+            <li><span aria-hidden="true">✓</span> Dohoda bez záväzkov</li>
+            <li><span aria-hidden="true">✓</span> Potvrdenie termínu e-mailom</li>
+          </ul>
+          <p class="small-note">Ceny sú ukážkové a pred zverejnením ich nahraďte aktuálnym cenníkom.</p>
+        </div>
+        <div class="price-card reveal">
+          <span class="price-card__label">ORIENTAČNÁ CENA</span>
+          <p class="price-card__amount">od <strong>120 €</strong><span> / noc</span></p>
+          <p>Presnú cenu vám potvrdíme podľa zvoleného termínu a počtu hostí.</p>
+          <a class="button button--green button--wide" href="#rezervacia">Overiť dostupnosť <span aria-hidden="true">→</span></a>
+          <small>Bez poplatku za odoslanie dopytu</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section section--space" id="rezervacia" aria-labelledby="booking-title">
+      <div class="container booking-layout">
+        <div class="booking-copy reveal">
+          <p class="eyebrow">Váš pobyt sa začína tu</p>
+          <h2 id="booking-title">Napíšte nám.<br><span>Tešíme sa na vás.</span></h2>
+          <p>Vyplňte krátky formulár a ozveme sa vám s potvrdením dostupnosti a cenou pobytu.</p>
+          <div class="booking-contact"><span aria-hidden="true">✉</span><span><small>Napíšte nám</small><a href="mailto:rezervacie@example.com">rezervacie@example.com</a></span></div>
+        </div>
+        <form class="booking-form reveal" id="booking-form">
+          <div class="form-row">
+            <label for="arrival">Príchod<input id="arrival" name="arrival" type="date" required></label>
+            <label for="departure">Odchod<input id="departure" name="departure" type="date" required></label>
+          </div>
+          <p class="stay-summary" id="stay-summary" aria-live="polite">Vyberte dátum príchodu a odchodu.</p>
+          <label for="guests">Počet hostí
+            <select id="guests" name="guests" required>
+              <option value="1">1 hosť</option><option value="2" selected>2 hostia</option>
+              <option value="3">3 hostia</option><option value="4">4 hostia</option>
+              <option value="5">5 hostí</option><option value="6">6 hostí</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label for="name">Vaše meno<input id="name" name="name" type="text" autocomplete="name" placeholder="Ako vás oslovíme?" required></label>
+            <label for="email">E-mail<input id="email" name="email" type="email" autocomplete="email" placeholder="vas@email.sk" required></label>
+          </div>
+          <label for="message">Správa <span class="optional">(nepovinné)</span><textarea id="message" name="message" rows="3" placeholder="Máte otázku alebo špeciálne želanie?"></textarea></label>
+          <button class="button button--green button--wide form-submit" type="submit">Pripraviť dopyt <span aria-hidden="true">→</span></button>
+          <p class="form-notice" id="form-notice" aria-live="polite">Odoslanie otvorí váš e-mailový program. Rezervácia platí až po potvrdení termínu.</p>
+        </form>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer" id="kontakt">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#domov"><span class="brand__mark" aria-hidden="true">⌂</span><span class="brand__name">Chata <strong>pod Rozsutcom</strong><small>TERCHOVÁ · MALÁ FATRA</small></span></a>
+        <p>Miesto pre chvíle, ktoré sa nikam neponáhľajú.</p>
+      </div>
+      <div class="footer-column"><h2>Napíšte alebo zavolajte</h2><a href="mailto:rezervacie@example.com">rezervacie@example.com</a><a href="tel:+421900000000">+421 900 000 000</a></div>
+      <div class="footer-column"><h2>Nájdete nás</h2><p>Terchová<br>Malá Fatra, Slovensko</p><a href="#rezervacia">Dohodnúť si pobyt <span aria-hidden="true">→</span></a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> Chata pod Rozsutcom</span><span>Ukážkové kontaktné údaje — pred zverejnením ich nahraďte vlastnými.</span><a href="#domov">Späť hore ↑</a></div>
+  </footer>
 </body>
 </html>
