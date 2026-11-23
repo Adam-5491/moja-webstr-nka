@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f8">
+  <meta name="description" content="Pošlite nezáväzný dopyt na pobyt v Chate Terchová v Terchovej pre skupiny a rodiny.">
+  <title>Rezervácia — Chata Terchová</title>
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Chata Terchová — domov"><span class="brand__mark" aria-hidden="true">⌂</span><span class="brand__name">Chata <strong>Terchová</strong><small>TERCHOVÁ · MALÁ FATRA</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Otvoriť navigáciu</span><span class="menu-toggle__line"></span><span class="menu-toggle__line"></span></button>
+    <nav class="main-nav" id="primary-nav" aria-label="Hlavná navigácia"><a href="index.html">Domov</a><a href="vybavenie.html">Vybavenie</a><a href="cennik.html">Cenník</a><a href="o-chate.html">O chate</a><a class="button button--small button--purple nav-booking" href="rezervacia.html" aria-current="page">Rezervovať <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="obsah">
+    <section class="page-hero" aria-labelledby="page-title">
+      <img class="page-hero__image" src="img/chata-sustiak-exterier-chata.jpg" alt="" aria-hidden="true">
+      <div class="container page-hero__content">
+      <p class="eyebrow"><a href="index.html">Domov</a> <span aria-hidden="true">/</span> Rezervácia</p>
+      <h1 id="page-title">Váš pobyt sa<br><span>začína tu.</span></h1>
+      <p>Pošlite nám nezáväzný dopyt. Dostupnosť a cenu vám potvrdíme e-mailom.</p>
+      </div>
+    </section>
+    <section class="booking-section section--space"><div class="container booking-layout">
+      <div class="booking-copy reveal"><p class="eyebrow">Tešíme sa na vás</p><h2>Napíšte nám.<br><span>Tešíme sa na vás.</span></h2><p>Vyplňte krátky formulár a ozveme sa vám s potvrdením dostupnosti a cenou pobytu.</p><div class="booking-contact"><span aria-hidden="true">✉</span><span><small>Napíšte nám</small><a href="mailto:rezervacie@example.com">rezervacie@example.com</a></span></div></div>
+      <form class="booking-form reveal" id="booking-form">
+        <div class="form-row"><label for="arrival">Príchod<input id="arrival" name="arrival" type="date" required></label><label for="departure">Odchod<input id="departure" name="departure" type="date" required></label></div>
+        <p class="stay-summary" id="stay-summary" aria-live="polite">Vyberte dátum príchodu a odchodu.</p>
+        <label for="guests">Počet hostí<select id="guests" name="guests" required><option value="1">1 hosť</option><option value="2" selected>2 hostia</option><option value="3">3 hostia</option><option value="4">4 hostia</option><option value="5">5 hostí</option><option value="6">6 hostí</option><option value="7">7 hostí</option><option value="8">8 hostí</option><option value="9">9 hostí</option><option value="10">10 hostí</option><option value="11">11 hostí</option><option value="12">12 hostí</option><option value="13">13 hostí</option><option value="14">14 hostí</option><option value="15">15 hostí</option><option value="16">16 hostí</option><option value="17">17 hostí</option><option value="18">18 hostí</option><option value="19">19 hostí</option></select></label>
+        <div class="form-row"><label for="name">Vaše meno<input id="name" name="name" type="text" autocomplete="name" placeholder="Ako vás oslovíme?" required></label><label for="email">E-mail<input id="email" name="email" type="email" autocomplete="email" placeholder="vas@email.sk" required></label></div>
+        <label for="message">Správa <span class="optional">(nepovinné)</span><textarea id="message" name="message" rows="3" placeholder="Máte otázku alebo špeciálne želanie?"></textarea></label>
+        <button class="button button--green button--wide form-submit" type="submit">Pripraviť dopyt <span aria-hidden="true">→</span></button>
+        <p class="form-notice" id="form-notice" aria-live="polite">Odoslanie otvorí váš e-mailový program. Rezervácia platí až po potvrdení termínu.</p>
+      </form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main">
+    <div class="footer-brand"><a class="brand brand--footer" href="index.html"><span class="brand__mark" aria-hidden="true">⌂</span><span class="brand__name">Chata <strong>Terchová</strong><small>TERCHOVÁ · MALÁ FATRA</small></span></a><p>Miesto pre chvíle, ktoré sa nikam neponáhľajú.</p></div>
+    <div class="footer-column"><h2>Napíšte alebo zavolajte</h2><a href="mailto:rezervacie@example.com">rezervacie@example.com</a><a href="tel:+421900000000">+421 900 000 000</a></div>
+    <div class="footer-column"><h2>Užitočné odkazy</h2><a href="vybavenie.html">Vybavenie</a><a href="cennik.html">Cenník <span aria-hidden="true">→</span></a></div>
+  </div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Chata Terchová</span><span>Informácie preberané z Megaubytovanie.sk.</span><a href="index.html">Domov ↑</a></div></footer>
+</body>
+</html>
